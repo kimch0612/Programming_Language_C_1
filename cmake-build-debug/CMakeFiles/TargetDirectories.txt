@@ -1,0 +1,3 @@
+C:/Users/Chals/CLionProjects/univ_assignment/cmake-build-debug/CMakeFiles/univ_assignment.dir
+C:/Users/Chals/CLionProjects/univ_assignment/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Chals/CLionProjects/univ_assignment/cmake-build-debug/CMakeFiles/rebuild_cache.dir

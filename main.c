@@ -1,16 +1,15 @@
 #include <stdio.h>
-
+#define TAX_RATE 0.2
 int main()
 {
-   short year = 0;
-   int sale = 0;
-   long total_sale = 0;
-   long long large_value;
+    const int MANTHS = 12;
+    int m_salary, y_salary;
 
-   year = 10;
-   sale = 200000000;
-   total_sale = year * sale;
+    printf("월급을 입력하시오: ");
+    scanf("%d", &m_salary);
+    y_salary = MONTHS * m_salary;
+    printf("연봉은 %d입니다.", y_salary);
+    printf("세금은 %f입니다.", y_salary*TAX_RATE);
 
-   printf("total_sale = %d \n", total_sale);
-   return 0;
+    return 0;
 }

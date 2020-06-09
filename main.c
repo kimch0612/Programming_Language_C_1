@@ -1,15 +1,24 @@
+#pragma warning(disable: 4996)
 #include <stdio.h>
-#define TAX_RATE 0.2
+
 int main()
 {
-    const int MANTHS = 12;
-    int m_salary, y_salary;
+   int x, y, result;
+   printf("두개의 정수를 입력하시오: ");
+   scanf("%d %d", &x, &y);
 
-    printf("월급을 입력하시오: ");
-    scanf("%d", &m_salary);
-    y_salary = MONTHS * m_salary;
-    printf("연봉은 %d입니다.", y_salary);
-    printf("세금은 %f입니다.", y_salary*TAX_RATE);
+   result = x + y;
+   printf("%d + %d = %d", x, y, result);
 
-    return 0;
+    result = x - y; // 뺄셈
+    printf("%d - %d = %d", x, y, result);
+
+    result = x * y; // 곱셈
+    printf("%d * %d = %d", x, y, result);
+
+    result = x / y; // 나눗셈
+    printf("%d + %d = %d", x, y, result);
+
+    result = x % y; // 나머지
+    printf("%d %% %d = %d", x, y, result);
 }

@@ -3,12 +3,16 @@
 
 int main()
 {
-    int x=10, y=10, z=33;
+    int x, y;
 
-    x += 1;
-    y *= 2;
-    z %= 10 + 20;
+    printf("두개의 정수를 입력하시오: ");
+    scanf("%d %d", &x, &y);
 
-    printf("x = %d y = %d z = %d \n", x, y, z);
+    printf("x == y의 결과값 : %d\n", x == y);
+    printf("x != y의 결과값 : %d\n", x != y);
+    printf("x > y의 결과값 : %d\n", x > y);
+    printf("x < y의 결과값 : %d\n", x < y);
+    printf("x >= y의 결과값 : %d\n", x >= y);
+    printf("x <= y의 결과값 : %d\n", x <= y);
     return 0;
 }

@@ -3,13 +3,12 @@
 
 int main()
 {
-    int x=10, y=10;
+    int x=10, y=10, z=33;
 
-    printf("x=%d\n", x);
-    printf("++x의 값=%d\n", ++x);
-    printf("x=%d\n\n", x);
+    x += 1;
+    y *= 2;
+    z %= 10 + 20;
 
-    printf("y=%d\n", y);
-    printf("y++의 값=%d\n", ++y);
-    printf("y=%d\n", y);
+    printf("x = %d y = %d z = %d \n", x, y, z);
+    return 0;
 }

@@ -3,12 +3,30 @@
 
 int main(void)
 {
-    printf("AND : %08X\n", 0x9 & 0xA);
-    printf("OR : %08X\n", 0x9 | 0xA);
-    printf("XOR : %08X\n", 0x9 ^ 0xA);
-    printf("NOT : %08X\n", ~0x9);
-    printf("<< : %08X\n", 0x4 << 1);
-    printf(">> : %08X\n", 0x4 >> 1);
+    unsigned int num;
+    printf("십진수: ");
+    scanf("%u", &num);
+
+    unsigned int mask = 1 << 7;
+    printf("이진수: ");
+
+    ((num & mask) == 0) ? printf("0") : printf("1");
+    mask = mask >> 1;
+    ((num & mask) == 0) ? printf("0") : printf("1");
+    mask = mask >> 1;
+    ((num & mask) == 0) ? printf("0") : printf("1");
+    mask = mask >> 1;
+    ((num & mask) == 0) ? printf("0") : printf("1");
+    mask = mask >> 1;
+    ((num & mask) == 0) ? printf("0") : printf("1");
+    mask = mask >> 1;
+    ((num & mask) == 0) ? printf("0") : printf("1");
+    mask = mask >> 1;
+    ((num & mask) == 0) ? printf("0") : printf("1");
+    mask = mask >> 1;
+    ((num & mask) == 0) ? printf("0") : printf("1");
+    mask = mask >> 1;
+    printf("\n");
 
     return 0;
 }

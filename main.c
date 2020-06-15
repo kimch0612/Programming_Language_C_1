@@ -9,5 +9,6 @@ int main(void)
     printf("NOT : %08X\n", ~0x9);
     printf("<< : %08X\n", 0x4 << 1);
     printf(">> : %08X\n", 0x4 >> 1);
+
     return 0;
 }

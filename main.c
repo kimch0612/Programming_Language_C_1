@@ -3,15 +3,11 @@
 
 int main(void)
 {
-    int x, y;
-
-    printf("첫번째 수 = ");
-    scanf("%d", &x);
-    printf("두번째 수 = ");
-    scanf("%d", &y);
-
-    printf("큰 수 = %d \n", (x > y) ? x:y);
-    printf("작은 수 = %d \n", (x < y) ? x:y);
-
+    printf("AND : %08X\n", 0x9 & 0xA);
+    printf("OR : %08X\n", 0x9 | 0xA);
+    printf("XOR : %08X\n", 0x9 ^ 0xA);
+    printf("NOT : %08X\n", ~0x9);
+    printf("<< : %08X\n", 0x4 << 1);
+    printf(">> : %08X\n", 0x4 >> 1);
     return 0;
 }

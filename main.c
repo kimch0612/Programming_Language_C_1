@@ -3,27 +3,14 @@
 
 int main(void)
 {
-    int i;
-    double f;
+    int number;
 
-    f = 5 / 4;
+    printf("정수를 입력하시오: ");
+    scanf("%d", &number);
 
-    printf("%f\n", f);
-
-    f = (double) 5 / 4;
-    printf("%f\n", f);
-
-    f = 5.0 / 4;
-    printf("%f\n", f);
-
-    f = (double)5 / (double)4;
-    printf("%f\n", f);
-
-    i = 1.3 + 1.8;
-    printf("%d\n", i);
-
-    i = (int)1.3 + (int)1.8;
-
-    printf("%d\n", i);
+    if (number % 2 == 0)
+        printf("입력된 정수는 짝수입니다.\n");
+    else
+        printf("입력된 정수는 홀수입니다.\n");
     return 0;
 }

@@ -3,20 +3,20 @@
 
 int main(void)
 {
-    int n1, n2, n3;
+    int score;
 
-    printf("정수를 입력하시오: ");
-    scanf("%d", &n1);
-    printf("정수를 입력하시오: ");
-    scanf("%d", &n2);
+    printf("성적을 입력하시오: ");
+    scanf("%d", &score);
 
-    if (n2==0)
-    {
-        printf("0으로 나눌 수는 없습니다.\n");
-    } else
-    {
-        n3 = n1 / n2;
-        printf("결과는 %d입니다.\n", n3);
-    }
+    if (score>=90)
+        printf("합격: 학점A\n");
+    else if (score>=80)
+        printf("합격: 학점B\n");
+    else if (score>=70)
+        printf("합격: 학점C\n");
+    else if (score>=60)
+        printf("합격: 학점D\n");
+    else
+        printf("불합격: 학점F\n");
     return 0;
 }

@@ -3,25 +3,29 @@
 
 int main(void)
 {
-    int month, days;
+    char op;
+    int x, y, result;
 
-    printf("달을 입력하시오: ");
-    scanf("%d", &month);
+    printf("수식을 입력하시오\n(예: 2 + 5)\n>>");
+    scanf("%d %c %d", &x, &op, &y);
 
-    switch(month) {
-        case 2:
-            days = 28;
+    switch(op) {
+        case '+':
+           result = x + y;
+           break;
+        case '-':
+            result = x - y;
             break;
-        case 4:
-        case 6:
-        case 9:
-        case 11:
-            days = 30;
+        case '/':
+            result = x / y;
+            break;
+        case '*':
+            result = x * y;
             break;
         default:
-            days = 31;
+            printf("지원되지 않는 연산자입니다.");
             break;
     }
-    printf("%d월의 일 수는 %d입니다.\n", month, days);
+    printf("%d %c %d = %d.\n", x, op, y, result);
     return 0;
 }

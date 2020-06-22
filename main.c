@@ -3,24 +3,25 @@
 
 int main(void)
 {
-    int number;
+    int month, days;
 
-    printf("점수를 입력하시오: ");
-    scanf("%d", &number);
+    printf("달을 입력하시오: ");
+    scanf("%d", &month);
 
-    switch(number) {
-        case 0:
-            printf("없음\n");
-            break;
-        case 1:
-            printf("하나\n");
-            break;
+    switch(month) {
         case 2:
-            printf("둘\n");
+            days = 28;
+            break;
+        case 4:
+        case 6:
+        case 9:
+        case 11:
+            days = 30;
             break;
         default:
-            printf("많음\n");
+            days = 31;
             break;
     }
-
+    printf("%d월의 일 수는 %d입니다.\n", month, days);
+    return 0;
 }

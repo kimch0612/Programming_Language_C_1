@@ -3,14 +3,20 @@
 
 int main(void)
 {
-    int number;
+    int n1, n2, n3;
 
     printf("정수를 입력하시오: ");
-    scanf("%d", &number);
+    scanf("%d", &n1);
+    printf("정수를 입력하시오: ");
+    scanf("%d", &n2);
 
-    if (number % 2 == 0)
-        printf("입력된 정수는 짝수입니다.\n");
-    else
-        printf("입력된 정수는 홀수입니다.\n");
+    if (n2==0)
+    {
+        printf("0으로 나눌 수는 없습니다.\n");
+    } else
+    {
+        n3 = n1 / n2;
+        printf("결과는 %d입니다.\n", n3);
+    }
     return 0;
 }
